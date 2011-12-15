@@ -53,7 +53,8 @@ function update() {
     ctx.lineWidth = 2.0;
     ctx.strokeStyle = "rgba(0, 0, 200, 0.8)";
     ctx.stroke();
-    console.log('drawn circle at ' + px +',' + py);
+    if (location.hash) // add '#' to the URL to see these:
+      console.log('drawn circle at ' + px +',' + py);
   }
 
   updateStarted = false;
